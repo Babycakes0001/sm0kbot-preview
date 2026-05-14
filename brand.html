@@ -57,6 +57,17 @@
   .stage.lockup img{max-width:560px;}
   .stage.icon img{max-width:240px;}
   .stage.silh img{max-width:240px;}
+  .brand-lockup{display:flex;align-items:center;gap:38px;}
+  .brand-chip{position:relative;display:inline-flex;}
+  .brand-chip::before{content:"";position:absolute;inset:-36%;border-radius:50%;
+    background:radial-gradient(circle,rgba(0,150,255,0.6) 0%,rgba(0,150,255,0.2) 42%,transparent 70%);
+    z-index:0;pointer-events:none;animation:chipPulse 3s ease-in-out infinite;}
+  .brand-chip img{position:relative;z-index:1;width:190px;}
+  .brand-wordmark{width:340px;}
+  @keyframes chipPulse{
+    0%,100%{opacity:0.5;transform:scale(0.9);}
+    50%{opacity:1;transform:scale(1.12);}
+  }
   .asset-note{padding:20px 28px 24px;font-size:14px;color:var(--blue-soft);line-height:1.6;}
 
   /* favicon strip */
@@ -100,7 +111,12 @@
       <div class="asset-name">Horizontal Lockup</div>
       <div class="asset-use">website header · signage · the main logo</div>
     </div>
-    <div class="stage lockup"><img src="images/logo-lockup.png" alt="Sm0kBot horizontal lockup"></div>
+    <div class="stage lockup">
+      <div class="brand-lockup">
+        <span class="brand-chip"><img src="images/chip-transparent.png" alt=""></span>
+        <img class="brand-wordmark" src="images/wordmark-transparent.png" alt="Sm0kBot horizontal lockup">
+      </div>
+    </div>
     <div class="asset-note">The primary logo. The exact locked glow-chip icon composited pixel-precise next to the "Sm0kBot" wordmark — same chip as the icon, no drift. This is what goes in the site header and on signage.</div>
   </div>
 
