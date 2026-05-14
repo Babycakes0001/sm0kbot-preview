@@ -660,6 +660,32 @@
     color: var(--ink-soft);
     line-height: 1.55;
   }
+  .iv-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(47,109,255,0.20) 0%, rgba(139,92,246,0.12) 100%);
+    border: 1px solid var(--line-bright);
+    box-shadow: 0 10px 26px -8px rgba(47,109,255,0.45), inset 0 1px 0 rgba(255,255,255,0.06);
+    margin-bottom: 18px;
+    transition: transform .3s, box-shadow .3s;
+  }
+  .iv-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--blue-soft);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .iv-card:hover .iv-icon {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 34px -8px rgba(47,109,255,0.6), inset 0 1px 0 rgba(255,255,255,0.08);
+  }
 
   /* ═════ VIDEO ═════ */
   .video-section { text-align: center; }
@@ -1004,18 +1030,22 @@
     </div>
     <div class="iv-grid">
       <div class="iv-card reveal">
+        <div class="iv-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/><path d="m4 4 16 16"/></svg></div>
         <h4>Zero PII storage</h4>
         <p>No database. No records. Once verification completes, identity data is gone. The machine doesn't remember the customer.</p>
       </div>
       <div class="iv-card reveal">
+        <div class="iv-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg></div>
         <h4>CCPA + GDPR compliant</h4>
         <p>International data privacy regulations satisfied out-of-the-box. TLS + AES-256 encryption between machine and cloud.</p>
       </div>
       <div class="iv-card reveal">
+        <div class="iv-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg></div>
         <h4>Plug &amp; play</h4>
         <p>MDB Level 3 compatible with most major vending brands. Private mobile hotspot included — no venue Wi-Fi needed.</p>
       </div>
       <div class="iv-card reveal">
+        <div class="iv-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/><path d="m4 4 16 16"/></svg></div>
         <h4>No app required</h4>
         <p>Customer doesn't download anything. Doesn't create an account. Walks up, scans, pays, leaves. 60 seconds end-to-end.</p>
       </div>
