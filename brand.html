@@ -68,6 +68,13 @@
     0%,100%{opacity:0.5;transform:scale(0.9);}
     50%{opacity:1;transform:scale(1.12);}
   }
+  .chip-led{position:absolute;left:20.1%;top:21.2%;width:11%;aspect-ratio:1;
+    transform:translate(-50%,-50%);border-radius:50%;z-index:2;pointer-events:none;
+    animation:ledPulse 2s ease-in-out infinite;}
+  @keyframes ledPulse{
+    0%,100%{background:#ff2e2b;box-shadow:0 0 12px 3px rgba(255,46,43,0.9);}
+    50%{background:#4d0808;box-shadow:0 0 4px 1px rgba(140,15,15,0.4);}
+  }
   .asset-note{padding:20px 28px 24px;font-size:14px;color:var(--blue-soft);line-height:1.6;}
 
   /* favicon strip */
@@ -113,7 +120,7 @@
     </div>
     <div class="stage lockup">
       <div class="brand-lockup">
-        <span class="brand-chip"><img src="images/chip-transparent.png" alt=""></span>
+        <span class="brand-chip"><img src="images/chip-transparent.png" alt=""><span class="chip-led"></span></span>
         <img class="brand-wordmark" src="images/wordmark-transparent.png" alt="Sm0kBot horizontal lockup">
       </div>
     </div>
