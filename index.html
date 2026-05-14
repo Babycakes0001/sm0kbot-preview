@@ -400,6 +400,34 @@
     box-shadow: 0 24px 48px -16px rgba(0,102,255,0.28);
   }
   .step:hover::before { transform: scaleX(1); }
+  .step-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: linear-gradient(135deg, rgba(47,109,255,0.20) 0%, rgba(139,92,246,0.12) 100%);
+    border: 1px solid var(--line-bright);
+    box-shadow: 0 10px 26px -8px rgba(47,109,255,0.45), inset 0 1px 0 rgba(255,255,255,0.06);
+    transition: transform .3s, box-shadow .3s;
+  }
+  .step-icon svg {
+    width: 26px;
+    height: 26px;
+    stroke: var(--blue-soft);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .step:hover .step-icon {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 34px -8px rgba(47,109,255,0.6), inset 0 1px 0 rgba(255,255,255,0.08);
+  }
   .step-num {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 56px;
@@ -837,21 +865,25 @@
     </div>
     <div class="steps">
       <div class="step reveal">
+        <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 14a8 8 0 0 1-8 8"/><path d="M18 11v-1a2 2 0 0 0-4 0"/><path d="M14 10V9a2 2 0 0 0-4 0v1"/><path d="M10 9.5V4a2 2 0 0 0-4 0v10"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></div>
         <div class="step-num">01</div>
         <h3>Select</h3>
         <p>Customer browses the touchscreen — full product images, descriptions, even promo videos. Selects what they want.</p>
       </div>
       <div class="step reveal">
+        <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg></div>
         <div class="step-num">02</div>
         <h3>Face scan</h3>
         <p>3D biometric scan validates a real human at the machine. No app. No phone. No account creation required.</p>
       </div>
       <div class="step reveal">
+        <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><path d="M16 10h2"/><path d="M16 14h2"/></svg></div>
         <div class="step-num">03</div>
         <h3>ID check</h3>
         <p>Customer presents ID to the scanner. Real-time AI authenticates holograms + UV security features + matches photo to face.</p>
       </div>
       <div class="step reveal">
+        <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 16l2 2 4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="M3.29 7L12 12l8.71-5"/><path d="M12 22V12"/></svg></div>
         <div class="step-num">04</div>
         <h3>Dispense</h3>
         <p>Verified and of age: payment unlocks. Tap, chip, Apple Pay, Google Wallet — all accepted. Product delivered.</p>
