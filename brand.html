@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0066ff">
+<title>Sm0kBot — Brand Sheet · Locked Assets</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#0a1530; --bg-2:#0d1a3e; --bg-3:#050a1c; --line:#1e2b4f;
+    --blue:#0066ff; --blue-soft:#5d9eff; --blue-glow:#00b8ff;
+    --purple:#7c3aed; --red:#ff2d2d;
+    --white:#fff; --bone:#e5edff;
+    --grad:linear-gradient(135deg,#00b8ff 0%,#a78bfa 100%);
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--bone);
+    font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh;}
+  body::before{content:"";position:fixed;inset:0;background:
+    radial-gradient(ellipse at 15% 8%,rgba(0,102,255,0.15),transparent 50%),
+    radial-gradient(ellipse at 85% 92%,rgba(124,58,237,0.12),transparent 50%);
+    pointer-events:none;z-index:0;}
+  .container{max-width:980px;margin:0 auto;padding:0 24px;position:relative;z-index:1;}
+  a{color:var(--blue-soft);text-decoration:none;}
+
+  header{padding:64px 0 40px;text-align:center;}
+  .stamp{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;
+    font-size:10.5px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--blue-glow);
+    background:rgba(0,184,255,0.08);padding:7px 14px;border:1px solid rgba(0,184,255,0.3);
+    border-radius:100px;margin-bottom:20px;}
+  .stamp::before{content:"";width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(34px,6vw,52px);font-weight:700;
+    line-height:1.04;letter-spacing:-0.025em;color:var(--white);margin-bottom:14px;}
+  h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;}
+  .subhead{font-size:16.5px;color:var(--blue-soft);max-width:600px;margin:0 auto;line-height:1.55;}
+  .home-link{display:inline-flex;gap:6px;margin-top:18px;font-family:'JetBrains Mono',monospace;
+    font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-soft);opacity:0.7;}
+
+  .asset{margin:28px 0;background:rgba(13,26,62,0.55);border:1px solid var(--line);
+    border-radius:22px;overflow:hidden;backdrop-filter:blur(20px);}
+  .asset-head{padding:22px 28px 0;}
+  .asset-num{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;
+    letter-spacing:0.22em;text-transform:uppercase;color:var(--blue-glow);}
+  .asset-name{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700;
+    color:var(--white);margin:6px 0 2px;letter-spacing:-0.015em;}
+  .asset-use{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--blue-soft);
+    letter-spacing:0.05em;padding-bottom:18px;}
+  .stage{background:#000;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;padding:40px 28px;}
+  .stage img{max-width:100%;border-radius:8px;}
+  .stage.lockup img{max-width:560px;}
+  .stage.icon img{max-width:240px;}
+  .stage.silh img{max-width:240px;}
+  .asset-note{padding:20px 28px 24px;font-size:14px;color:var(--blue-soft);line-height:1.6;}
+
+  /* favicon strip */
+  .fav-strip{display:flex;align-items:flex-end;gap:28px;flex-wrap:wrap;
+    padding:36px 28px;background:#000;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    justify-content:center;}
+  .fav-item{text-align:center;}
+  .fav-item img{display:block;margin:0 auto 8px;border-radius:6px;image-rendering:auto;}
+  .fav-item .lbl{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--blue-soft);
+    letter-spacing:0.1em;}
+
+  /* palette */
+  .palette{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:24px 28px;}
+  @media(min-width:560px){.palette{grid-template-columns:repeat(4,1fr);}}
+  .sw{border-radius:12px;padding:16px 14px;border:1px solid rgba(255,255,255,0.1);}
+  .sw .hex{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;}
+  .sw .nm{font-size:11px;opacity:0.85;margin-top:3px;}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 60px;text-align:center;
+    font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--blue-soft);
+    opacity:0.5;letter-spacing:0.1em;text-transform:uppercase;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="stamp">Brand Sheet · All Locked</div>
+    <h1>Sm0kBot — <em>the locked set.</em></h1>
+    <p class="subhead">Every approved brand asset, one place. The horizontal lockup, the icon, the silhouette, the favicons — all final, all consistent, one DNA.</p>
+    <a href="index.html" class="home-link">← Back to Site</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- LOCKUP -->
+  <div class="asset">
+    <div class="asset-head">
+      <div class="asset-num">// asset.01 · primary</div>
+      <div class="asset-name">Horizontal Lockup</div>
+      <div class="asset-use">website header · signage · the main logo</div>
+    </div>
+    <div class="stage lockup"><img src="images/logo-lockup.png" alt="Sm0kBot horizontal lockup"></div>
+    <div class="asset-note">The primary logo. The exact locked glow-chip icon composited pixel-precise next to the "Sm0kBot" wordmark — same chip as the icon, no drift. This is what goes in the site header and on signage.</div>
+  </div>
+
+  <!-- ICON -->
+  <div class="asset">
+    <div class="asset-head">
+      <div class="asset-num">// asset.02 · mark</div>
+      <div class="asset-name">SB Chip Icon</div>
+      <div class="asset-use">favicon · app icon · social avatar · machine badge</div>
+    </div>
+    <div class="stage icon"><img src="images/sb-glowchip-alt.png" alt="Sm0kBot SB chip icon"></div>
+    <div class="asset-note">The standalone mark — glowing chip die, electric-blue connector pins, the clean SB monogram, red notch dot as the accent pop. Used anywhere the full lockup is too detailed to read small.</div>
+  </div>
+
+  <!-- SILHOUETTE -->
+  <div class="asset">
+    <div class="asset-head">
+      <div class="asset-num">// asset.03 · flat</div>
+      <div class="asset-name">2-Color Silhouette</div>
+      <div class="asset-use">single-color stamp · embroidery · etching · print</div>
+    </div>
+    <div class="stage silh"><img src="images/sb-silhouette-blue.png" alt="Sm0kBot 2-color silhouette"></div>
+    <div class="asset-note">Blue + black, flat, no glow — the SB chip mark stripped to two colors. The version that stamps clean in metal, embroiders, screen-prints one-color, or etches into a machine panel. Matches the main logo's DNA.</div>
+  </div>
+
+  <!-- FAVICONS -->
+  <div class="asset">
+    <div class="asset-head">
+      <div class="asset-num">// asset.04 · favicons</div>
+      <div class="asset-name">Favicon Set</div>
+      <div class="asset-use">browser tab · home screen · app icon — generated, live on the site</div>
+    </div>
+    <div class="fav-strip">
+      <div class="fav-item"><img src="favicon/favicon-16.png" width="16" height="16" alt="16px favicon"><div class="lbl">16px</div></div>
+      <div class="fav-item"><img src="favicon/favicon-32.png" width="32" height="32" alt="32px favicon"><div class="lbl">32px</div></div>
+      <div class="fav-item"><img src="favicon/apple-touch-icon.png" width="64" height="64" alt="apple touch icon"><div class="lbl">180px · apple touch</div></div>
+      <div class="fav-item"><img src="favicon/icon-512.png" width="96" height="96" alt="512px icon"><div class="lbl">512px</div></div>
+    </div>
+    <div class="asset-note">All sizes generated from the SB chip icon — wired into the site's &lt;head&gt; and already live in your browser tab.</div>
+  </div>
+
+  <!-- PALETTE -->
+  <div class="asset">
+    <div class="asset-head">
+      <div class="asset-num">// asset.05 · palette</div>
+      <div class="asset-name">Color System</div>
+      <div class="asset-use">the tri-color brand scheme + supporting darks</div>
+    </div>
+    <div class="palette">
+      <div class="sw" style="background:#0066ff;color:#fff;"><div class="hex">#0066FF</div><div class="nm">Electric Blue — primary</div></div>
+      <div class="sw" style="background:#7c3aed;color:#fff;"><div class="hex">#7C3AED</div><div class="nm">Purple — gradient pair</div></div>
+      <div class="sw" style="background:#ff2d2d;color:#fff;"><div class="hex">#FF2D2D</div><div class="nm">Red — notch accent pop</div></div>
+      <div class="sw" style="background:#0a1530;color:#fff;border-color:rgba(255,255,255,0.2);"><div class="hex">#0A1530</div><div class="nm">Deep Navy — base</div></div>
+    </div>
+    <div class="asset-note">Headlines: Space Grotesk. Body: Inter. Mono / tech labels: JetBrains Mono. The logo wordmark uses the custom angular chip-font.</div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    // sm0kbot brand sheet · all assets locked · 2026
+  </div>
+</footer>
+
+</body>
+</html>
