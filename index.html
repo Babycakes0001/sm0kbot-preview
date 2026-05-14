@@ -68,11 +68,11 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255,255,255,0.85);
+    background: rgba(10,21,48,0.90);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid var(--line);
-    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 10px 0;
   }
   .nav-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   .logo {
@@ -88,10 +88,10 @@
   .nav-links { display: none; gap: 28px; font-size: 13px; font-weight: 500; }
   @media (min-width: 768px) { .nav-links { display: flex; } }
   .nav-links a {
-    color: var(--ink-soft);
+    color: rgba(255,255,255,0.78);
     transition: color .2s;
   }
-  .nav-links a:hover { color: var(--blue); }
+  .nav-links a:hover { color: var(--blue-soft); }
   .nav-cta {
     display: inline-flex;
     align-items: center;
