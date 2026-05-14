@@ -9,8 +9,12 @@
 
 <meta property="og:title" content="Sm0kBot — The 30-Second AI Smoke Shop">
 <meta property="og:description" content="Biometric age-verified cigar & tobacco vending for hotels, lounges, and casinos. Zero capital cost. Compliance built in.">
-<meta property="og:image" content="images/sm0kbot-machine-hero.jpeg">
+<meta property="og:image" content="images/logo-lockup.png">
 <meta property="og:type" content="website">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,35 +76,15 @@
   }
   .nav-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   .logo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--ink);
     display: flex;
-    align-items: baseline;
-    gap: 2px;
+    align-items: center;
   }
-  .logo .zero {
-    color: var(--blue);
-    position: relative;
-    display: inline-block;
+  .logo img {
+    height: 40px;
+    width: auto;
+    display: block;
   }
-  .logo .zero::after {
-    content: "";
-    position: absolute;
-    top: 50%; left: -2px; right: -2px;
-    height: 2px;
-    background: var(--blue);
-    transform: rotate(-20deg);
-  }
-  .logo .reg {
-    font-size: 10px;
-    color: var(--blue);
-    margin-left: 2px;
-    vertical-align: top;
-    line-height: 1;
-  }
+  @media (min-width: 768px) { .logo img { height: 46px; } }
   .nav-links { display: none; gap: 28px; font-size: 13px; font-weight: 500; }
   @media (min-width: 768px) { .nav-links { display: flex; } }
   .nav-links a {
@@ -747,12 +731,12 @@
 
 <header class="nav">
   <div class="container nav-row">
-    <a href="#" class="logo">Sm<span class="zero">0</span>kBot<span class="reg">®</span></a>
+    <a href="#" class="logo" aria-label="Sm0kBot — AI Smoke Shop"><img src="images/logo-lockup.png" alt="Sm0kBot — AI Smoke Shop"></a>
     <nav class="nav-links">
       <a href="#how">How It Works</a>
       <a href="#machines">The Machines</a>
       <a href="#identivend">Age Verification</a>
-      <a href="#use-cases">Use Cases</a>
+      <a href="#partnership">Partnership</a>
     </nav>
     <a href="#contact" class="nav-cta">Partner With Us</a>
   </div>
@@ -777,7 +761,7 @@
         </div>
       </div>
       <div class="hero-machine reveal">
-        <img src="images/sm0kbot-machine-hero.jpeg" alt="Sm0kBot AI smart vending machine — Omni Series with custom Sm0kBot circuit-board wrap, electric blue glow, futuristic corridor">
+        <img src="images/IMG_6890.jpeg" alt="Sm0kBot AI smart vending machine deployed outside a retail storefront — branded black machine with electric blue glow">
       </div>
     </div>
   </div>
@@ -955,6 +939,39 @@
         </div>
         <h3>Casinos &amp; Members Clubs</h3>
         <p>High-roller floors deserve high-end tobacco access. Casino-grade compliance + 24/7 availability. Identivend's biometric layer satisfies state gaming regulators.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ THE PARTNERSHIP ═════ -->
+<section id="partnership">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">// the partnership</div>
+      <h2>Zero capital. Zero staffing. <em>All upside.</em></h2>
+      <p>Sm0kBot isn't a machine you buy — it's an amenity we run. We place it, stock it, service it, and keep it compliant. Your venue provides the spot and earns from a premium tobacco amenity without lifting a finger.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h3>We place it</h3>
+        <p>Sm0kBot installs the Omni Elite or Omni Vista at your venue at zero capital cost to you. Custom-wrapped to fit your space and your brand.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <h3>We stock it</h3>
+        <p>Premium cigar and tobacco SKUs, sourced and restocked on schedule. Cloud-monitored inventory means it never runs dry without us knowing.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <h3>We keep it legal</h3>
+        <p>FDA Tobacco Retailer compliance, Tobacco 21, state licensing, Identivend biometric age verification — the entire regulatory burden sits with us, not you.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">04</div>
+        <h3>You earn</h3>
+        <p>Your venue gets a high-end tobacco amenity that runs 24/7 with zero staff hours. Partnership terms are tailored to each venue — let's talk.</p>
       </div>
     </div>
   </div>
