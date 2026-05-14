@@ -312,18 +312,15 @@
   .hero-machine img {
     width: 100%; height: 100%; object-fit: cover;
   }
-  .hero-machine::before {
-    content: "// omni.series · sm0kbot v2026";
-    position: absolute;
-    top: 18px;
-    left: 18px;
-    z-index: 2;
+  .hero-visual { text-align: center; }
+  .hero-machine-caption {
+    display: inline-block;
+    margin-top: 14px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
     letter-spacing: 0.18em;
     color: var(--blue-soft);
     background: rgba(7,11,22,0.78);
-    backdrop-filter: blur(8px);
     padding: 7px 12px;
     border-radius: 6px;
     border: 1px solid var(--line-bright);
@@ -818,8 +815,11 @@
           <div class="hero-stat"><div class="v" data-count>43″</div><div class="l">Max Touchscreen</div></div>
         </div>
       </div>
-      <div class="hero-machine reveal">
-        <img src="images/machine-renders/pick-corridor.png" alt="Sm0kBot Omni Elite — matte black wrap with electric-blue accent lighting, deployed in an upscale hotel corridor">
+      <div class="hero-visual reveal">
+        <div class="hero-machine">
+          <img src="images/machine-renders/pick-corridor.png" alt="Sm0kBot Omni Elite — matte black wrap with electric-blue accent lighting, deployed in an upscale hotel corridor">
+        </div>
+        <div class="hero-machine-caption">// omni.series · sm0kbot v2026</div>
       </div>
     </div>
   </div>
