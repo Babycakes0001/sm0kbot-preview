@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0066ff">
+<title>Sm0kBot — Founding Partnership Memo</title>
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg:           #ffffff;
+    --bg-tint:      #f0f4ff;
+    --bg-dark:      #0a1530;
+    --ink:          #0a1530;
+    --ink-soft:     #3d4a6b;
+    --ink-dim:      #6b7494;
+    --line:         #e2e8f5;
+    --line-bright:  #cfd8ed;
+    --blue:         #0066ff;
+    --blue-soft:    #5d9eff;
+    --blue-faint:   #d6e3ff;
+    --blue-glow:    rgba(0,102,255,0.4);
+    --purple:       #7c3aed;
+    --purple-bright:#8b5cf6;
+    --grad:         linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink-soft);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* ═════ HEADER ═════ */
+  header.doc-head {
+    padding: 50px 0 28px;
+    border-bottom: 1px solid var(--line);
+    background:
+      radial-gradient(ellipse at 10% 0%, rgba(0,102,255,0.10), transparent 60%),
+      radial-gradient(ellipse at 90% 100%, rgba(124,58,237,0.08), transparent 60%);
+  }
+  .stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--blue);
+    padding: 6px 12px;
+    border: 1px solid var(--blue-faint);
+    border-radius: 100px;
+    background: rgba(0,102,255,0.06);
+    margin-bottom: 18px;
+  }
+  .stamp::before {
+    content: "";
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 6px var(--blue);
+  }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(30px, 5.5vw, 44px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  h1 em {
+    font-style: normal;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-dim);
+    margin-top: 18px;
+    letter-spacing: 0.04em;
+  }
+  .meta b { color: var(--ink); font-weight: 600; }
+  .draft-flag {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: rgba(124,58,237,0.06);
+    border-left: 3px solid var(--purple);
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .draft-flag b { color: var(--ink); }
+
+  /* ═════ ARTICLE ═════ */
+  article { padding: 40px 0 80px; }
+
+  section.s {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section.s:last-child { border-bottom: none; }
+  section.s .lab {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 10px;
+  }
+  section.s h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.018em;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  section.s h2 em {
+    font-style: normal;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  section.s p {
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+  section.s p strong { color: var(--ink); font-weight: 600; }
+  section.s ul {
+    list-style: none;
+    margin: 12px 0;
+    padding: 0;
+  }
+  section.s li {
+    position: relative;
+    padding: 10px 0 10px 24px;
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    border-bottom: 1px dashed var(--line);
+  }
+  section.s li:last-child { border-bottom: none; }
+  section.s li::before {
+    content: "→";
+    position: absolute;
+    left: 0; top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: var(--blue);
+  }
+  section.s li strong { color: var(--ink); font-weight: 600; }
+
+  /* contribution columns */
+  .cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin: 14px 0;
+  }
+  @media (min-width: 700px) { .cols { grid-template-columns: 1fr 1fr; } }
+  .col {
+    padding: 22px 22px;
+    background: var(--bg-tint);
+    border-radius: 12px;
+    border: 1px solid var(--blue-faint);
+  }
+  .col h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .col h4::before {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--grad);
+  }
+  .col ul li {
+    border-bottom: none;
+    padding: 4px 0 4px 18px;
+    font-size: 14.5px;
+  }
+  .col ul li::before {
+    content: "✓";
+    color: var(--blue);
+    font-weight: 700;
+    top: 4px;
+  }
+
+  /* ═════ FOOTER ═════ */
+  footer.doc-foot {
+    background: var(--bg-dark);
+    color: rgba(255,255,255,0.7);
+    padding: 50px 0 60px;
+    text-align: center;
+  }
+  footer.doc-foot .container { position: relative; }
+  footer.doc-foot h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  footer.doc-foot p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+    max-width: 520px;
+    margin: 0 auto 22px;
+    line-height: 1.6;
+  }
+  .sig-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 36px;
+    text-align: left;
+  }
+  @media (min-width: 600px) { .sig-block { grid-template-columns: 1fr 1fr; gap: 32px; } }
+  .sig {
+    padding: 22px 24px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+  }
+  .sig .role {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue-soft);
+    margin-bottom: 6px;
+  }
+  .sig .name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .sig .lane {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.5;
+  }
+  .doc-footer-meta {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.1em;
+  }
+
+</style>
+</head>
+<body>
+
+<header class="doc-head">
+  <div class="container">
+    <span class="stamp">Founding Partnership Memo · v0.1 Draft</span>
+    <h1>How we <em>build Sm0kBot</em> together.</h1>
+    <div class="meta">
+      <div><b>Between:</b> Michael Gonzalez &amp; Christian Hernandez</div>
+      <div><b>Entity:</b> Sm0kBot LLC <span style="opacity:0.5">(to be formed)</span></div>
+      <div><b>Date:</b> May 2026</div>
+    </div>
+    <div class="draft-flag">
+      <b>This is a memo, not a contract.</b> It's the shape of the deal we're agreeing to in principle — what we're each putting in, how we're splitting the upside, and how we'll make decisions. Mark it up, push back, counter. Once we both feel good about the shape, we lawyer it into a real operating agreement.
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <section class="s">
+      <div class="lab">// section.01 — the vision</div>
+      <h2>What we're <em>actually building.</em></h2>
+      <p>Sm0kBot is the smart cigar &amp; tobacco vending platform for hotels, lounges, casinos, and members-only venues. Biometric age verification on every transaction. Zero capital cost to the venue. We place, stock, and operate.</p>
+      <p><strong>The long game:</strong> a multi-state network of Sm0kBot machines and a brand recognizable enough to be acquired by a major tobacco company or scaled into a franchise model. We're not building a small business. We're building the category — and we want both founders aligned for that timeline.</p>
+    </section>
+
+    <section class="s">
+      <div class="lab">// section.02 — the deal</div>
+      <h2>The structure: <em>50/50 founding partners.</em></h2>
+      <ul>
+        <li><strong>Equity split:</strong> 50% / 50% membership interests. Equal partners, equal upside, equal voice.</li>
+        <li><strong>Capital contribution at formation:</strong> Sweat equity from both founders. No cash buy-in required from either side.</li>
+        <li><strong>Reserve pool:</strong> Up to 10% set aside for future hires, advisors, or specialists. Both founders dilute proportionally when granted.</li>
+        <li><strong>Matching-money rule:</strong> If one founder injects cash, the other matches dollar-for-dollar within 90 days, OR equity adjusts to reflect the difference. Nobody buys control via capital.</li>
+      </ul>
+    </section>
+
+    <section class="s">
+      <div class="lab">// section.03 — what each of us brings</div>
+      <h2>The contribution split.</h2>
+      <div class="cols">
+        <div class="col">
+          <h4>Michael (CEO · Front of House)</h4>
+          <ul>
+            <li>The first deployed Sm0kBot machine</li>
+            <li>Queen Mary placement deal (Steve Caloca / Aimbridge)</li>
+            <li>Cigar &amp; tobacco industry relationships</li>
+            <li>Brand identity, lifestyle vertical, social media presence</li>
+            <li>Customer-facing partnerships + venue intros (existing rolodex)</li>
+            <li>Manufacturer relationships for cigar / tobacco SKU sourcing</li>
+            <li>Event &amp; trade show network</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Christian (COO + General Counsel)</h4>
+          <ul>
+            <li>LLC formation, registered agent, ongoing legal stack</li>
+            <li>State-by-state tobacco licensing &amp; compliance</li>
+            <li>Regulatory lobbying — getting Sm0kBot legal in 18+ spaces (not just 21+)</li>
+            <li>Multi-state expansion strategy + tax structuring</li>
+            <li>Venue intros via municipal &amp; government affairs network</li>
+            <li>City + county relationships for placement permits</li>
+            <li>Banking, business credit, M&amp;A readiness</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="s">
+      <div class="lab">// section.04 — decision making</div>
+      <h2>How we move <em>without locking up.</em></h2>
+      <p><strong>Defined lanes.</strong> Each founder has final authority on decisions within their lane. The other consults; doesn't veto.</p>
+      <ul>
+        <li><strong>Mike's lane (CEO):</strong> brand, marketing, product mix, customer relationships, public face, lifestyle vertical, tobacco/cigar partnerships</li>
+        <li><strong>Christian's lane (COO/GC):</strong> legal, regulatory, lobbying, LLC operations, contracts, gov affairs, financial controls, banking</li>
+      </ul>
+      <p><strong>Joint authority (both sign):</strong> equity issuance, capital raises over $25K, company sale, C-level hires, annual budget, loans over $25K, opening a new state market.</p>
+      <p><strong>If we get stuck on a joint decision:</strong> 7-day cool-off → independent advisor mediation (pre-named: a trusted mutual contact) → if still locked, either founder can invoke a "shotgun" — name a price; the other either buys at that price or sells at that price. Forces fair valuation. Nobody can hold the company hostage.</p>
+    </section>
+
+    <section class="s">
+      <div class="lab">// section.05 — protecting the work</div>
+      <h2>Vesting + time commitment.</h2>
+      <p>This protects both of us. If either of us has to step back for a life event, the unvested equity returns to the company — no hard feelings, just structure.</p>
+      <ul>
+        <li><strong>4-year vesting</strong> applied to both founders' equity</li>
+        <li><strong>12-month cliff</strong> — nothing vests if a founder leaves in year one</li>
+        <li><strong>After cliff:</strong> 25% vested, then 1/48 per month over 36 months</li>
+        <li><strong>Sale accelerator:</strong> 100% vests immediately on company sale or acquisition</li>
+        <li><strong>Minimum time commitment:</strong> Each founder commits a defined minimum of hours/week to Sm0kBot. If either drops below for 90+ days without notice, equity reverts proportionally.</li>
+      </ul>
+    </section>
+
+    <section class="s">
+      <div class="lab">// section.06 — the exit</div>
+      <h2>Built for sale. <em>Designed clean.</em></h2>
+      <p>We're transparent about the long-game intent: we want this company sellable to a major tobacco distributor (Philip Morris, Altria, etc.) or expandable into a franchise model. That changes how we structure from day one.</p>
+      <ul>
+        <li><strong>Drag-along:</strong> If a qualifying offer comes in above an agreed valuation threshold, either founder can force the sale. Neither of us can block a life-changing exit out of emotion.</li>
+        <li><strong>Tag-along:</strong> If one founder gets a buyout offer for their stake, the other has the right to sell their stake at the same per-share price. Prevents an acquirer from peeling one of us off and stranding the other.</li>
+        <li><strong>IP &amp; relationships assignment:</strong> All work product, contacts, deals, and brand IP generated during the partnership belong to Sm0kBot LLC. Pre-existing relationships catalogued at formation; post-formation: LLC property.</li>
+        <li><strong>Liquidation waterfall:</strong> At sale, each founder first recoups any matched capital they contributed. Remaining proceeds split 50/50.</li>
+      </ul>
+    </section>
+
+    <section class="s">
+      <div class="lab">// section.07 — the rest</div>
+      <h2>The clauses we'll lock in the formal agreement.</h2>
+      <p>These are the items that need real legal language but the principle is straightforward:</p>
+      <ul>
+        <li><strong>Buy-Sell + Death/Disability:</strong> If one of us dies or becomes disabled, the other has right of first refusal on the stake at a pre-agreed valuation. LLC-funded life insurance on both of us to provide buyout liquidity.</li>
+        <li><strong>Non-compete during partnership:</strong> Neither runs a competing tobacco-vending business while in Sm0kBot. Christian keeps Innovative Strategies LLC running (different vertical, no conflict).</li>
+        <li><strong>Confidentiality:</strong> Trade secrets, vendor lists, customer contracts protected during + post-partnership.</li>
+        <li><strong>Regulatory compliance:</strong> FDA Tobacco Retailer registration, Tobacco 21 federal law, state licensing maintenance, biometric data handling under CCPA (Identivend stack already compliant).</li>
+        <li><strong>Dispute resolution:</strong> Arbitration (JAMS or AAA) before litigation. Defined venue.</li>
+        <li><strong>State of formation:</strong> California by default; open to Delaware if there's a tax/M&amp;A reason — your call, Christian, since you know the filing landscape best.</li>
+      </ul>
+    </section>
+
+    <section class="s">
+      <div class="lab">// section.08 — what we're asking</div>
+      <h2>The ask, in one paragraph.</h2>
+      <p>Christian — read this on your time. Mark up anything that's off. Push back where you'd structure it differently. Add anything we're missing. <strong>Once we both feel good about the shape, we draft a real operating agreement</strong> (you can drive the formal version, since this is your lane) and file the LLC. Mike's not trying to lock anything down today — this is the conversation starter so we're aligned on what we're actually building before we lawyer it.</p>
+    </section>
+
+  </div>
+</article>
+
+<footer class="doc-foot">
+  <div class="container">
+    <h3>Two founders. One company.</h3>
+    <p>Equal partners. Defined lanes. Built for the long game and structured for a clean exit when the moment comes.</p>
+
+    <div class="sig-block">
+      <div class="sig">
+        <div class="role">// founder.01 · ceo</div>
+        <div class="name">Michael Gonzalez</div>
+        <div class="lane">Brand · Product · Tobacco Network · Customer-Facing</div>
+      </div>
+      <div class="sig">
+        <div class="role">// founder.02 · coo / gc</div>
+        <div class="name">Christian Hernandez</div>
+        <div class="lane">Legal · Regulatory · Lobbying · Operations · Banking</div>
+      </div>
+    </div>
+
+    <div class="doc-footer-meta">
+      Sm0kBot · AI Smoke Shop · Founding Partnership Memo v0.1 · DRAFT — NOT BINDING
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
